@@ -1,0 +1,16 @@
+Library
+   structure While
+is
+   bigint.sml
+   rational.sml
+   datatypes.sml      (* Lots of datatypes *)
+   While.lex             (* Lexer rules. *)
+   While.yacc:MLYacc     (* Parser rules. *)
+   glue.sml           (* Build the parser *)
+   compiler.sml       (* Lex, parse, panic... *)
+
+   $/basis.cm         (* Basis library *)
+   $/ml-yacc-lib.cm   (* ML-Lex and ML-Yacc library *)
+
+   $smlnj/compiler/compiler.cm    (* Structure Compiler, needed
+                                     for printDepth, autoloaded. *) 
